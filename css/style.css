@@ -1,7 +1,7 @@
 /* Configs Gerais */
 @font-face {
     font-family: myfont;
-    src: url(/font/Ubuntu-Bold.ttf);
+    src: url(../font/Ubuntu-Bold.ttf);
 }
 
 body {
@@ -65,7 +65,7 @@ a{
 .home {
     height: 100vh;
     background-color: black;
-    background-image: url(/img/home.gifa);
+    background-image: url(../img/home.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -152,7 +152,7 @@ h1 {
 
 .title {
     font-size: 3em;
-    font-family: myfont, Arial, Helvetica, sans-serif
+    font-family: myfont, Arial, Helvetica, sans-serif;
     color: #337A9E;
 }
 
