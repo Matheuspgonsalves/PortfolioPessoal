@@ -209,7 +209,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 10px #242424;
+    box-shadow: 5px 5px 10px #1f0505;
 }
 
 .container-icons li i {
@@ -252,7 +252,7 @@ h1 {
 
 .projetos {
     padding: .5rem;
-    box-shadow: 5px 10px 10px rgb(31, 31, 31);
+    box-shadow: 5px 10px 10px #1f0505;
 }
 
 .projetos .box {
@@ -363,4 +363,15 @@ footer {
         font-size: 100px;
     }
     
+}
+
+/* Barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f00000;
+    border-radius: 1.4rem;
 }
