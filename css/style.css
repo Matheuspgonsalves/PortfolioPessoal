@@ -362,6 +362,10 @@ footer {
     .section-title {
         font-size: 100px;
     }
+
+    .navbar {
+        display: none;
+    }
     
 }
 
