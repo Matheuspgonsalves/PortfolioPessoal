@@ -1,20 +1,5 @@
-//Variaveis
-const navbar = document.querySelector(".navbar");
-const elTexto = document.querySelector(".typing");
+/* Texto que aparece como se fosse digitando */
 const text = 'Desenvolvedor Front-End'
-const interval = 60;
-
-
-
-
-window.addEventListener("scroll", () => {//Animacao da navbar quando o scroll for acionado.
-    if (window.scrollY > 40) {
-        navbar.classList.add("bg-dark");
-    }
-    else {
-        navbar.classList.remove("bg-dark");
-    }
-})
 
 function digitando()
 {
@@ -28,3 +13,29 @@ function digitando()
 }
 
 document.addEventListener("DOMContentLoaded", digitando);
+
+/* Configurações de estilização da navbar*/
+
+//Variaveis
+const navbar = document.querySelector(".navbar");
+const elTexto = document.querySelector(".typing");
+const elMenuLateral = document.querySelector(".menu-lateral");
+const elDireita = document.querySelector(".direita");
+
+//Animacao da navbar quando o scroll for acionado.
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 40) {
+        navbar.classList.add("bg-dark");
+    }
+    else {
+        navbar.classList.remove("bg-dark");
+    }
+})
+
+//Animacao do menu lateral
+elMenuLateral.addEventListener("click", ()=>{
+    
+})
+
+
+

@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -24,62 +25,53 @@ html {
 }
 
 /* Essas são as configurações relativas ao menu de navegação do site */
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 248);
-}
-
-.navbar {
-    height: 10vh;
+#navbar {
+    width: 80px;
+    height: 100vh;
     position: fixed;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .6s ease;
-}
-
-.nav-link:hover {
-    color: #ff0000;
-    transition:all 0.5s ;
-}
-
-.bg-dark {
     background-color: #000000;
-    
-    z-index: +1;
+    border-right: 5px solid #d63e3e;
+    display: flex;
+    flex-direction: column;
 }
 
-/* .logo {
-    height: 40px;
-    width: 18vw;
-    background: url(/img/logo.png) no-repeat center center;
-    background-size: cover;
-} */
+#nav-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    list-style: none;
+    margin-left: 1rem;
+    
+}
 
-.mobile-menu {
+a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+    color: white;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+#nav-list .nav-link:hover, .closed:hover {
+color: #ff0000;
+}
+
+.closed {
     cursor: pointer;
+    position: absolute;
+    padding: 0.3rem;
     display: none;
 }
 
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #ffffff;
-    margin: 8px;
-}
-
-.lista-de-navegacao {
-    list-style: none;
-    display: flex;
-    letter-spacing: 3px;
-}
-
-.lista-de-navegacao a{
-    margin: 30px;
-    font-size: 1.4em;
-    text-align: center;
+.barra {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    margin: 10px;
+    border-radius: .3rem;
 }
 
 /* Fim da Navbar */
@@ -100,7 +92,7 @@ a{
 }
 
 .meu-nome {
-    color: #ff0000;
+    color: #d63e3e;
     margin-left: 6rem;
 }
 
