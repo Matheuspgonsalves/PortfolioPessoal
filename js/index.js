@@ -16,18 +16,15 @@ window.addEventListener("scroll", () => {//Animacao da navbar quando o scroll fo
     }
 })
 
-function textoDigitando(el, texto, intervalo) {
-    const char = text.split("").reverse();
-
-    const typer = setInterval(()=>{
-        if(!char.length)
+function digitando()
+{
+    for(let i = 0; i < text.length; i++)
+    {
+        setTimeout(()=>
         {
-            return clearInterval(typer);
-        }
-        const next = char.pop();
-
-        elTexto.innerHTML += next
-    }, interval);
+            elTexto.innerHTML += text[i];
+        },i*100);
+    }
 }
 
-textoDigitando(elTexto, text, interval)
+document.addEventListener("DOMContentLoaded", digitando);
