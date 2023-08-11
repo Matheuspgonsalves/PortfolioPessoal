@@ -316,10 +316,7 @@ h1 {
     align-items: center;
 }
 
-.ref:hover div{
-    color: #ff0000;
-    transition: all .6s ease;
-}
+
 
 /* Fim da sessão "Contato" */
 
@@ -405,6 +402,19 @@ footer {
         height: 120vh;
     }
 
+    .contato-container {
+        flex-direction: column;
+        height: 120vh;
+        
+    }
+    
+    .contato-container div {
+        margin-top: 1rem;
+    }
+
+    a {
+        transition: none ;
+    }
     
     
 }
